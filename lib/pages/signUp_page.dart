@@ -3,6 +3,8 @@ import 'package:future_job/pages/signIn_page.dart';
 import 'package:future_job/theme.dart';
 import 'package:email_validator/email_validator.dart';
 
+import 'home_page.dart';
+
 class SignUpPage extends StatefulWidget {
   const SignUpPage({Key? key}) : super(key: key);
 
@@ -185,7 +187,9 @@ class _SignUpPageState extends State<SignUpPage> {
                       width: 400,
                       height: 50,
                       child: TextButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(context, MaterialPageRoute(builder: (context)=> HomePage()));
+                        },
                         style: TextButton.styleFrom(
                             backgroundColor: primaryColor,
                             shape: RoundedRectangleBorder(

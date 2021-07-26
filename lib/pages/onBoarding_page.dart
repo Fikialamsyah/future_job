@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:future_job/pages/SignUp_page.dart';
+import 'package:future_job/pages/signUp_page.dart';
 import 'package:future_job/pages/signIn_page.dart';
 import 'package:future_job/theme.dart';
 

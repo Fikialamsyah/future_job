@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:future_job/theme.dart';
 import 'package:email_validator/email_validator.dart';
 
-import 'SignUp_page.dart';
+import 'signUp_page.dart';
 
 class SignInPage extends StatefulWidget {
   const SignInPage({Key? key}) : super(key: key);
