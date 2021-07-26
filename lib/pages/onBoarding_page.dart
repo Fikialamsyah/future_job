@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:future_job/pages/SignUp_page.dart';
+import 'package:future_job/pages/signIn_page.dart';
 import 'package:future_job/theme.dart';
 
 class OnBoardingPage extends StatelessWidget {
@@ -37,12 +39,14 @@ class OnBoardingPage extends StatelessWidget {
                     child: Column(
                       children: [
                         Padding(
-                          padding: const EdgeInsets.only(top: 280),
+                          padding: const EdgeInsets.only(top: 350),
                           child: Container(
                             width: 200,
                             height: 45,
                             child: TextButton(
-                              onPressed: () {},
+                              onPressed: () {
+                                Navigator.push(context, MaterialPageRoute(builder: (context) => SignUpPage()));
+                              },
                               child: Text(
                                 "Get Started",
                                 style: purpleTextStyle.copyWith(
@@ -63,7 +67,9 @@ class OnBoardingPage extends StatelessWidget {
                           width: 200,
                           height: 45,
                           child: OutlinedButton(
-                              onPressed: () {},
+                              onPressed: () {
+                                Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => SignInPage()));
+                              },
                               style: OutlinedButton.styleFrom(
                                   side: BorderSide(color: whiteColor),
                                   shape: RoundedRectangleBorder(
